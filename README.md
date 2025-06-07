@@ -7,6 +7,8 @@
 
 ---
 
+![descrição](/torstack.png)  
+
 ## 🛡️ Objetivo
 
 Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
