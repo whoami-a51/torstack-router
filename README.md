@@ -105,7 +105,7 @@ Deve mostrar o IP da ProtonVPN.
 Isso vai gerar um novo circuito na rede Tor, mudando o IP de saída.  
 
 ### 🔥 Script combinado:  
-Crie um arquivo start-anon.sh com o seguinte conteúdo:  
+Crie um arquivo torstack.sh com o seguinte conteúdo:  
 #!/bin/bash  
 
 echo "[+] Iniciando roteamento com kalitorify..."  
@@ -114,10 +114,10 @@ sudo kalitorify --start
 sleep 5  
   
 echo "[+] Trocando IP do Tor..."  
-cd ~/tor-ip-changer  
-./tor-ip-changer.sh --verbose   
+cd ~/Tor-IP-Changer-main    
+python3 IP-Changer    
 
-Dê permissão de execução:chmod +x start-anon.sh  
+Dê permissão de execução: ```chmod +x torstack.sh```  
 
 Execute sempre que quiser iniciar o Linux com tudo roteado pela Tor e com IP renovado.  
 
