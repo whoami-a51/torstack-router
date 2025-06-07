@@ -1,8 +1,8 @@
 ```CIBERSEGURANÇA```   
 
-# 🧅 VPN + Tor
+# 🧅 VPN + Tor + Tor-IP-Changer
 
-> Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) dentro do Linux.  
+> Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) sendo alterado em todo instante. 
 > **Modelo: [Tor] → [VPN] → [Internet]**  
 
 ---
@@ -15,6 +15,7 @@ Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 
 - **VPN no roteador**: Esconde o IP real de todos os dispositivos da rede.
 - **Kalitorify no Linux**: Redireciona todo o tráfego da máquina para a rede Tor.
+- **Tor-IP-Changer no Linux**: Gera novo circuito na rede Tor a cada s segundos.
 
 ---
 
@@ -85,6 +86,38 @@ Em outro dispositivo da rede, acesse:
 https://ipinfo.io
 ```
 Deve mostrar o IP da ProtonVPN.
+
+---
+
+# 🔄 Etapa 4: Trocar IP da rede Tor com tor-ip-changer (opcional)
+
+### 1. Instalar o tor-ip-changersudo apt install tor curl
+git clone https://github.com/Meitar/tor-ip-changer.git
+cd tor-ip-changer
+chmod +x tor-ip-changer.sh
+
+### 2. Usar após ativar o kalitorifysudo kalitorify --start
+cd tor-ip-changer
+./tor-ip-changer.sh --verbose
+
+Isso vai gerar um novo circuito na rede Tor, mudando o IP de saída.
+
+### 🔥 Dica de script combinado:
+Crie um arquivo start-anon.sh com o seguinte conteúdo:
+#!/bin/bash
+
+echo "[+] Iniciando roteamento com kalitorify..."
+sudo kalitorify --start
+
+sleep 5
+
+echo "[+] Trocando IP do Tor..."
+cd ~/tor-ip-changer
+./tor-ip-changer.sh --verbose
+
+Dê permissão de execução:chmod +x start-anon.sh
+
+Execute sempre que quiser iniciar o Kali com tudo roteado pela Tor e com IP renovado.
 
 ---
 
