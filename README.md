@@ -105,7 +105,8 @@ Deve mostrar o IP da ProtonVPN.
 Isso vai gerar um novo circuito na rede Tor, mudando o IP de saída.  
 
 ### 🔥 Script combinado:  
-Crie um arquivo torstack.sh com o seguinte conteúdo:  
+Crie um arquivo torstack.sh com o seguinte conteúdo: 
+
 #!/bin/bash  
 
 echo "[+] Iniciando roteamento com kalitorify..."  
@@ -135,9 +136,8 @@ Todo o tráfego do Linux:
 
 ---
 
-## 🧱 Segurança extra
+## 🧱 Segurança extra  
 
-- Tor-IP-Changer -> a cada x segundos, seu IP Tor é alterado
 - Não usar contas pessoais nesse Linux
 - Não abrir PDFs direto
 - Rodar o Linux numa VM para isolamento
