@@ -1,7 +1,7 @@
 # 🧅 VPN no Roteador + Kalitorify no Sistema
 
 > Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) dentro do Linux.  
-> **Modelo: VPN → Tor**
+> **Modelo:[ Tor ] → [ VPN ] → [ Internet ]**  
 
 ---
 
