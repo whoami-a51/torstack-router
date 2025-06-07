@@ -27,7 +27,7 @@ Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 
 ### No Linux:
 - Máquina física ou virtual
-- `git`, `iptables`, `torsocks`, `tor` e `kalitorify`
+- `git`, `iptables`, `torsocks`, `tor`,`kalitorify` e `tor-ip-changer`
 
 ---
 
