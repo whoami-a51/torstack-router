@@ -91,12 +91,14 @@ Deve mostrar o IP da ProtonVPN.
 
 # 🔄 Etapa 4: Trocar IP da rede Tor com tor-ip-changer
 
-### 1. Instalar o tor-ip-changersudo apt install tor curl  
+### 1. Instalar o tor-ip-changer  
+    $ sudo apt install tor curl  
     $ git clone https://github.com/Meitar/tor-ip-changer.git  
     $ cd tor-ip-changer  
     $ chmod +x tor-ip-changer.sh  
 
-### 2. Usar após ativar o kalitorifysudo kalitorify --start   
+### 2. Usar após ativar o kalitorify
+    $ sudo kalitorify --start   
     $ cd tor-ip-changer  
     $ ./tor-ip-changer.sh --verbose
 
