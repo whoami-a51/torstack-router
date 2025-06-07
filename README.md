@@ -100,6 +100,7 @@ Todo o tráfego do Linux:
 
 ## 🧱 Segurança extra
 
+- Tor-IP-Changer -> a cada x segundos, seu IP Tor é alterado
 - Não usar contas pessoais nesse Linux
 - Não abrir PDFs direto
 - Rodar o Linux numa VM para isolamento
