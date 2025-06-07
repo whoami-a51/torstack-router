@@ -19,7 +19,7 @@ Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 ## ⚙️ Requisitos
 
 ### Roteador:
-- Compatível com **OpenVPN** (DD-WRT, OpenWRT, AsusWRT, pfSense, Mikrotik, etc.)
+- Compatível com **OpenVPN** (DD-WRT, OpenWRT, AsusWRT, pfSense, Mikrotik etc)
 - Conta ProtonVPN gratuita ou paga
 
 ### No Linux:
@@ -103,4 +103,4 @@ Todo o tráfego do Linux:
 - Não usar contas pessoais nesse Linux
 - Não abrir PDFs direto
 - Rodar o Linux numa VM para isolamento
-- Usar DNS fora do roteador (Cloudflare, etc.)
+- Usar DNS fora do roteador (Cloudflare)
