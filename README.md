@@ -115,7 +115,7 @@ sleep 5
   
 echo "[+] Trocando IP do Tor..."  
 cd ~/Tor-IP-Changer-main    
-python3 IP-Changer    
+python3 IP-Changer.py    
 
 Dê permissão de execução: ```chmod +x torstack.sh```  
 
@@ -127,7 +127,7 @@ Execute sempre que quiser iniciar o Linux com tudo roteado pela Tor e com IP ren
 
 Todo o tráfego do Linux:
 ```
-[ Linux (Tor via kalitorify) ] → [ VPN no roteador ] → [ Internet ]
+[ Linux (Tor + IP Changer) ] → [ VPN no roteador ] → [ Internet ]
 ```
 
 - Nenhum tráfego sai da rede sem passar pela VPN.
