@@ -93,14 +93,14 @@ Deve mostrar o IP da ProtonVPN.
 
 ### 1. Instalar o tor-ip-changer  
      sudo apt install tor curl  
-     git clone https://github.com/Meitar/tor-ip-changer.git  
-     cd tor-ip-changer  
-     chmod +x tor-ip-changer.sh  
+     git clone https://github.com/isPique/Tor-IP-Changer.git  
+     cd Tor-IP-Changer-main
+     pip -r requirements.txt
 
 ### 2. Usar após ativar o kalitorify
      sudo kalitorify --start   
-     cd tor-ip-changer  
-     ./tor-ip-changer.sh --verbose
+     cd Tor-IP-Changer-main
+     sudo python3 IP-Changer.py
 
 Isso vai gerar um novo circuito na rede Tor, mudando o IP de saída.  
 
