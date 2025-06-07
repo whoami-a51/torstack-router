@@ -29,7 +29,7 @@ Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 ## 🛜 Etapa 1: Configurar VPN no Roteador
 
 ### 1. Acesse o painel do seu roteador
-Geralmente em `192.168.0.1` ou `192.168.1.1`. Caso não saiba, digite: ```ìfconfig```  
+Geralmente em `192.168.0.1` ou `192.168.1.1`. Caso não saiba, digite: ```ìfconfig```.  
 
 ### 2. Configure a VPN (ProtonVPN)
 Se o roteador for compatível:
@@ -102,5 +102,3 @@ Todo o tráfego do Linux:
 - Não abrir PDFs direto
 - Rodar o Linux numa VM para isolamento
 - Usar DNS fora do roteador (Cloudflare, etc.)
-
-- [Kalitorify](https://github.com/brainfucksec/kalitorify)
