@@ -2,7 +2,7 @@
 
 # 🧅 VPN + Tor + Tor-IP-Changer
 
-> Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) sendo alterado em todo instante. 
+> Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) sendo alterado em todo instante.  
 > **Modelo: [Tor] → [IP Changer] → [VPN] → [Internet]**  
 
 ---
