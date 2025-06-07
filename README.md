@@ -1,6 +1,6 @@
 # 🧅 VPN no Roteador + Kalitorify no Kali Linux
 
-> Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) dentro do Kali Linux.  
+> Projeto de anonimato com estrutura em camadas: tráfego da rede passa por uma VPN física (via roteador) e depois por Tor (via kalitorify) dentro do Linux.  
 > **Modelo: VPN → Tor**
 
 ---
@@ -10,7 +10,7 @@
 Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 
 - **VPN no roteador**: Esconde o IP real de todos os dispositivos da rede.
-- **Kalitorify no Kali Linux**: Redireciona todo o tráfego da máquina para a rede Tor.
+- **Kalitorify no Linux**: Redireciona todo o tráfego da máquina para a rede Tor.
 
 ---
 
@@ -20,7 +20,7 @@ Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 - Compatível com **OpenVPN** (DD-WRT, OpenWRT, AsusWRT, pfSense, Mikrotik, etc.)
 - Conta ProtonVPN gratuita ou paga
 
-### Kali Linux:
+### No Linux:
 - Máquina física ou virtual
 - `git`, `iptables`, `torsocks`, `tor` e `kalitorify`
 
@@ -29,7 +29,7 @@ Garantir **anonimato real** e **não-vazamento de IP** com o uso conjunto de:
 ## 🛜 Etapa 1: Configurar VPN no Roteador
 
 ### 1. Acesse o painel do seu roteador
-Geralmente em `192.168.0.1` ou `192.168.1.1`.
+Geralmente em `192.168.0.1` ou `192.168.1.1`. Caso não saiba, digite: ```ìfconfig```  
 
 ### 2. Configure a VPN (ProtonVPN)
 Se o roteador for compatível:
@@ -46,7 +46,7 @@ Acesse `https://ipinfo.io` de qualquer dispositivo conectado e veja se o IP é o
 
 ---
 
-## 🧠 Etapa 2: Instalar Kalitorify no Kali Linux
+## 🧠 Etapa 2: Instalar Kalitorify no Linux
 
 ### 1. Clonar o repositório
 ```bash
@@ -86,34 +86,21 @@ Deve mostrar o IP da ProtonVPN.
 
 ## 🔒 Resultado esperado
 
-Todo o tráfego do Kali Linux:
+Todo o tráfego do Linux:
 ```
-[ Kali (Tor via kalitorify) ] → [ VPN no roteador ] → [ Internet ]
+[ Linux (Tor via kalitorify) ] → [ VPN no roteador ] → [ Internet ]
 ```
 
 - Nenhum tráfego sai da rede sem passar pela VPN.
-- Nenhum app dentro do Kali fura o Tor.
+- Nenhum app dentro do Linux fura o Tor.
 
 ---
 
-## 🧱 Segurança extra (opcional)
+## 🧱 Segurança extra
 
-- Não usar contas pessoais nesse Kali
+- Não usar contas pessoais nesse Linux
 - Não abrir PDFs direto
-- Rodar o Kali numa VM para isolamento
+- Rodar o Linux numa VM para isolamento
 - Usar DNS fora do roteador (Cloudflare, etc.)
 
----
-
-## 📜 Licença
-
-Este projeto é livre para uso educacional.  
-Não nos responsabilizamos por mau uso.  
-Licença: MIT.
-
----
-
-## 🙏 Créditos
-
-- [ProtonVPN](https://protonvpn.com)
 - [Kalitorify](https://github.com/brainfucksec/kalitorify)
